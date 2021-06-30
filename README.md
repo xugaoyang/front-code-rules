@@ -18,7 +18,7 @@
 
 #### 参考资料：
 1. [airbnb](https://github.com/airbnb/javascript)
-2. [airbnb简体中文版](https://github.com/lin-123/javascript)
+2. [airbnb中文版](https://github.com/lin-123/javascript)
 3. [prettier](https://prettier.io/docs/en/index.html)
 4. [eslint](https://eslint.bootcss.com/)
 5. [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
