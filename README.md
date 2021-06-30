@@ -1,5 +1,6 @@
 # front-code-rules
-前端代码规范
+前端代码规范。
+> 集百家之所长，融百家之所思，扬百家之所名
 
 #### js规范
 
@@ -23,3 +24,4 @@
 4. [eslint](https://eslint.bootcss.com/)
 5. [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 6. [clean-code-javascript中文版](https://github.com/alivebao/clean-code-js)
+7. [凹凸实验室](https://guide.aotu.io/index.html)
