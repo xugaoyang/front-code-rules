@@ -2,21 +2,14 @@
 前端代码规范
 
 #### js规范
----
-
 
 #### css规范
----
-
 
 #### html规范
----
 
 #### 命名规则
----
 
 #### 工具
----
 1. [codeIf](https://unbug.github.io/codelf/)
 
 
@@ -24,7 +17,6 @@
 
 
 #### 参考资料：
----
 1. [airbnb](https://github.com/airbnb/javascript)
 2. [airbnb简体中文版](https://github.com/lin-123/javascript)
 3. [prettier](https://prettier.io/docs/en/index.html)
