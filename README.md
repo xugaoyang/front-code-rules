@@ -6,6 +6,99 @@
 
 #### js 规范
 
+##### 逗号
+
+- 禁止前置逗号，eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style.html)
+
+```javascript
+// bad
+const story = [once, upon, aTime]
+
+// good
+const story = [once, upon, aTime]
+
+// bad
+const hero = {
+  firstName: 'Ada',
+  lastName: 'Lovelace',
+  birthYear: 1815,
+  superPower: 'computers',
+}
+
+// good
+const hero = {
+  firstName: 'Ada',
+  lastName: 'Lovelace',
+  birthYear: 1815,
+  superPower: 'computers',
+}
+```
+
+- 需要额外结尾逗号。eslint: [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle.html)
+
+```diff
+// bad - 没有结尾逗号的 git diff
+const hero = {
+      firstName: 'Florence',
+-     lastName: 'Nightingale'
++     lastName: 'Nightingale',
++     inventorOf: ['coxcomb chart', 'modern nursing']
+};
+
+// good - 有结尾逗号的 git diff
+const hero = {
+      firstName: 'Florence',
+      lastName: 'Nightingale',
++     inventorOf: ['coxcomb chart', 'modern nursing'],
+};
+```
+
+```javascript
+// bad
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully',
+}
+
+const heroes = ['Batman', 'Superman']
+
+// good
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully',
+}
+
+const heroes = ['Batman', 'Superman']
+
+// bad
+function createHero(firstName, lastName, inventorOf) {
+  // does nothing
+}
+
+// good
+function createHero(firstName, lastName, inventorOf) {
+  // does nothing
+}
+
+// good (注意，逗号不应出现在使用了 ... 操作符后的参数后面)
+function createHero(firstName, lastName, inventorOf, ...heroArgs) {
+  // does nothing
+}
+
+// bad
+createHero(firstName, lastName, inventorOf)
+
+// good
+createHero(firstName, lastName, inventorOf)
+
+// good  (注意，逗号不应出现在使用了 ... 操作符后的参数后面)
+createHero(firstName, lastName, inventorOf, ...heroArgs)
+```
+
+##### 分号
+
+- 默认在行尾不添加分号
+
 ##### 命名规范
 
 - 避免用一个字母命名，让你的命名有意义。eslint: [`id-length`](http://eslint.org/docs/rules/id-length)
@@ -100,7 +193,7 @@ function query() {
   }
   ```
 
-- `export default`导出模块A，则这个文件名也叫`A.\*`， `import`时候的参数也叫`A`。 大小写完全一致。
+- `export default`导出模块 A，则这个文件名也叫`A.\*`， `import`时候的参数也叫`A`。 大小写完全一致。
 
   ```javascript
   // file 1 contents
@@ -231,7 +324,7 @@ function query() {
       };
 
       // good
-      
+
       export const MAPPING = {
         key: 'value'
       };
