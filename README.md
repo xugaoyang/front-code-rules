@@ -206,41 +206,36 @@ function query() {
       ```javascript
       // bad
 
-  const PRIVATE_VARIABLE = 'should not be unnecessarily uppercased within a file';
+      const PRIVATE_VARIABLE = 'should not be unnecessarily uppercased within a file';
 
       // bad
 
-  export const THING_TO_BE_CHANGED = 'should obviously not be uppercased';
+      export const THING_TO_BE_CHANGED = 'should obviously not be uppercased';
 
       // bad
 
-  export let REASSIGNABLE_VARIABLE = 'do not use let with uppercase variables';
+      export let REASSIGNABLE_VARIABLE = 'do not use let with uppercase variables';
 
+      // 允许但不够语义化
+
+      export const apiKey = 'SOMEKEY';
+
+      // 在大多数情况下更好
+
+      export const API_KEY = 'SOMEKEY';
+
+      // bad - 不必要的大写键，没有增加任何语义
+
+      export const MAPPING = {
+        KEY: 'value'
+      };
+
+      // good
+      
+      export const MAPPING = {
+        key: 'value'
+      };
       ```
-
-// ---
-
-    // 允许但不够语义化
-
-export const apiKey = 'SOMEKEY';
-
-    // 在大多数情况下更好
-
-export const API_KEY = 'SOMEKEY';
-
-// ---
-
-    // bad - 不必要的大写键，没有增加任何语义
-    export const MAPPING = {
-      KEY: 'value'
-
-};
-
-    // good
-    export const MAPPING = {
-      key: 'value'
-    };
-    ```
 
 #### css 规范
 
