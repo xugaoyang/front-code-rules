@@ -6,6 +6,10 @@
 
 #### js 规范
 
+##### 注释
+
+##### 空格
+
 ##### 逗号
 
 - 禁止前置逗号，eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style.html)
@@ -336,7 +340,97 @@ function query() {
 
 #### html 规范
 
-#### 命名规则
+#### vue 规范
+
+- 组件名为多个单词
+
+- 组件数据
+
+- prop定义
+
+- v-for设置键值
+
+- v-for和v-if避免使用
+
+- 组件样式作用域
+
+- 单文件组件文件名首字母大写
+
+```
+// bad
+components/
+| - myComponent
+
+// good
+components/
+| - MyComponent
+```
+
+- 紧密耦合的组件名
+
+```
+// bad
+components/
+|- TodoList.vue
+|- TodoItem.vue
+|- TodoButton.vue
+
+// good
+components/
+|- TodoList.vue
+|- TodoListItem.vue
+|- TodoListItemButton.vue
+
+```
+
+- 完整单词的组件名
+
+```
+// bad
+components/
+|- SdSettings.vue
+
+// good
+components/
+|- StudentDashboardSettings.vue
+
+```
+- 在声明 prop 的时候，其命名应该始终使用 camelCase，而在模板和 JSX 中应该始终使用 kebab-case。
+
+```
+// bad
+props: {
+  'greeting-text': String
+}
+<WelcomeMessage greetingText="hi"/>
+
+// good
+props: {
+  greetingText: String
+}
+<WelcomeMessage greeting-text="hi"/>
+```
+
+- 多个 attribute 的元素应该分多行撰写，每个 attribute 一行
+
+```
+// bad
+<img src="https://vuejs.org/images/logo.png" alt="Vue Logo">
+
+<MyComponent foo="a" bar="b" baz="c"/>
+
+// good
+<img
+  src="https://vuejs.org/images/logo.png"
+  alt="Vue Logo"
+>
+
+<MyComponent
+  foo="a"
+  bar="b"
+  baz="c"
+/>
+```
 
 #### 工具
 
@@ -352,3 +446,4 @@ function query() {
 6. [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 7. [clean-code-javascript 中文版](https://github.com/alivebao/clean-code-js)
 8. [凹凸实验室](https://guide.aotu.io/index.html)
+9. [vue风格指南](https://cn.vuejs.org/v2/style-guide/index.html)
