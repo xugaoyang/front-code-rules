@@ -684,6 +684,43 @@ props: {
 />
 ```
 
+#### 文件命名规范
+
+- service
+
+```
+// 首字母大写，结尾添加Service导出
+// EascService.js
+export default class EascService {
+
+}
+
+```
+- component
+
+```
+// 组件首字母大写
+-- components
+|  |- Test.vue
+
+```
+
+- view
+
+```
+// 首字母小写,文件夹目录首字母小写
+-- folderName
+|  |- test.vue
+```
+
+- store
+
+```
+// 首字母小写,文件夹目录首字母小写
+-- modules
+|  |- Test.js
+```
+
 #### 工具
 
 1. 命名查询：[codeIf](https://unbug.github.io/codelf/)
