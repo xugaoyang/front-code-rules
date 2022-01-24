@@ -732,7 +732,7 @@ export default class EascService {
 - component
 
 ```
-// 组件首字母大写
+// 组件首字母大写,vue文件皆为组件
 -- components
 |  |- Test.vue
 
@@ -751,7 +751,7 @@ export default class EascService {
 ```
 // 首字母小写,文件夹目录首字母小写
 -- modules
-|  |- Test.js
+|  |- test.js
 ```
 
 #### 工具
